@@ -11,24 +11,11 @@ public class GreatestNumber {
         int b = scanner.nextInt();
         System.out.println("Input 3th number");
         int c = scanner.nextInt();
-        System.out.println("The greatest number is ");
 
         if (a > b && a > c) {
             System.out.println(a);
-        } else if (a > b && a < c) {
-            System.out.println(c);
-        } else if (a < b && c < b) {
-            System.out.println(b);
-        } else if (a > b && b < c) {
-            System.out.println(a);
-        } else if (a == b && a > c) {
-            System.out.println(b);
-        } else if (a > b && b == c) {
-            System.out.println(a);
-        } else if (b > a && a == c) {
-            System.out.println(b);
-        } else if (a == b && b == c) {
-            System.out.println("The greatest number not find");
+        } else {
+            System.out.println("Biggest number is: " + Math.max(b, c));
         }
     }
 }
